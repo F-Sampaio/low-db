@@ -1,4 +1,15 @@
 {
-  "noticias": [],
+  "noticias": [
+    {
+      "id": "1",
+      "assunto": "Mundo",
+      "conteudo": "noticia teste"
+    },
+    {
+      "id": "2",
+      "assunto": "Mundo",
+      "conteudo": "São Paulo"
+    }
+  ],
   "usuarios": []
 }

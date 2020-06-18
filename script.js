@@ -3,30 +3,37 @@ const fileSyng = require('lowdb/adapters/FileSync');
 
 const adapter = new fileSyng('banco.json');
 const db = lowdb(adapter);
+// CRUD COM LOWDB
 // cria o banco banco.json
 db.defaults({
     noticias:[],
     usuarios:[],   
 }).write()
 
-// insere
+// CREAT
 // db.get('noticias')
 //     .push({
-//         id: "1",
-//         assunto: 'mundo',
-//         conteudo: 'noticia teste',
+//         id: "",
+//         assunto: '',
+//         conteudo: '',
 //     }).write()
 
-db.set("settings.toggledOption", true).write
 
-// Faz busca
+// READ
 // const busca = db
 //     .get('noticias')
-//     .find({id: '1'})
+//     .find({id: '2'})
 //     .value()
 // console.log(busca)
 
-// deleta
+// UPDATE
+// db.get('noticias')
+//     .find({assunto: 'mundo'})
+//     .assign({assunto: 'Mundo'})
+//     .write()
+
+
+// DELETE
 // db.get('noticias')
 //     .remove({id : '1'})
 //     .write()
